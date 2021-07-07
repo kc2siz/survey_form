@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./index.js"></script> -->
+</head>
+<body>
+   <div class=header>
+    <title>
+        <h1>How can the ARRL best serve you?</h1>
+    </title>
+
+    <h1 id="header">How can the ARRL best serve you?</h1> 
+
+    <p class="paragraph" id="description">
+        Please complete this short survey so that we can determine the best way to meet your needs.
+    </p>
+
+<div id="trick">
+    <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name-label" name="name" placeholder="Name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email-label" placeholder="Email address"> <br>
+        <label for="years">How many years have belonged to the ARRL?</label>
+        <input type="number" id="number-label" placeholder="Yrs of membership" min="1" max="90"><br>
+        
+
+        <label for="cars">What brought you to amateur radio?</label>
+           <select id="dropdown" name="dropdown">
+              <option value="Shortwave Listening">Shortwave Listening</option>
+              <option value="other hams">Other hams</option>
+              <option value="cb">CB Radio</option>
+              <option value="accident">It was an accident</option>
+           </select><br>
+
+          <p>What type of antenna do you use?</p><br>
+             <input type="radio" id="horizontal-dipole" name="horizontal-dipole" value="horizontal dipole">
+             <label for="horizontal-dipole">Horizontal dipole</label><br>
+             <input type="radio" id="random-wire" name="random-wire" value="random-wire">
+             <label for="css">Random wire</label><br>
+             <input type="radio" id="vertical" name="vertical" value="vertical">
+             <label for="vertical">Vertical</label>
+
+             <p>Are other members of your family active in the hobby?</p>
+
+    
+               <input type="checkbox" id="family1" name="family1" value="Bike">
+               <label for="family1"> Yes!</label><br>
+               <input type="checkbox" id="family2" name="family2" value="Car">
+               <label for="family2"> No, it's just me.</label><br>
+               <input type="checkbox" id="family3" name="family3" value="Boat">
+               <label for="family3"> Not right now, but I'm working on it!</label><br><br>
+            
+ 
+             <p>Please add any additional comments here:</p>
+
+             <form id="usrform">
+             <textarea rows="4" cols="50" name="comment" form="usrform">
+             Enter text here...</textarea><br>
+
+
+             <input type="submit" value="Submit">
+
+    </form>
+    </div>
+    </div>
+    
+</body>
+</html>
